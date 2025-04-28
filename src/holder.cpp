@@ -82,5 +82,12 @@ bool LinkedStack::is_full(){
     return false;
 }
 
-void LinkedStack::print(ostream & out);
-LinkedStack::~LinkedStack();
+void LinkedStack::print(ostream & out){
+    ListNode* main_node = L;
+    for(;main_node!=nullptr;main_node=main_node->next){
+        out<<main_node->data<<endl;
+    }
+}
+LinkedStack::~LinkedStack(){
+    ListNode::delete_list(head);
+}
