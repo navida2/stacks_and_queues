@@ -12,7 +12,11 @@ ostream & operator << (ostream & out, Stack & L);
             buf[size++] = word;
         }
     }
-    void pop();
+    void ArrayStack::pop(){
+        if(size!=0){
+            --size;
+        }
+    }
     string top(){
         //come back and add error if list is empty
         return buf[size-1];
