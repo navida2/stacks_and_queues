@@ -8,7 +8,9 @@ ostream & operator << (ostream & out, Stack & L);
     }
     
     void ArrayStack::push(const string & word){
-        
+        if(size!=capacity){
+            buf[size++] = word;
+        }
     }
     void pop();
     string top(){
@@ -26,5 +28,7 @@ ostream & operator << (ostream & out, Stack & L);
             out<<buf[i]<<endl;
         }
     }
-    ~ArrayStack();
+    ArrayStack::~ArrayStack(){
+        delete[] buf;
+    }
     
