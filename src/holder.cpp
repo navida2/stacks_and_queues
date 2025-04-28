@@ -63,7 +63,9 @@ void LinkedStack::push(const string & word){
 void LinkedStack::pop(){
     //check da size to se if 0 if not then fo the rest of code
     if (size != 0){
+        ListNode* old_head = head;
         head = head->next;
+        delete old_head;
         --size;
     }
 
