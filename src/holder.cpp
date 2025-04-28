@@ -40,8 +40,20 @@ ArrayStack::~ArrayStack(){
 }
 
 //NODE
-void ListNode::print(ostream & out, ListNode * L);
-void ListNode::delete_list(ListNode * L);
+void ListNode::print(ostream & out, ListNode * L){
+    ListNode* main_node = L;
+    for(;main_node != nullptr;main_node = main_node->next){
+        out<<main_node->data<<endl;
+    }
+}
+void ListNode::delete_list(ListNode * L){
+    ListNode* main_node = L;
+    for(;main_node != nullptr;){
+        ListNode *tmp_node = main_node;
+        main_node = main_node->next;
+        delete tmp_node;
+    }
+}
 
 //LINKED STACK FUNCTIONS
 LinkedStack();
