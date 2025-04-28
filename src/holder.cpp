@@ -60,7 +60,14 @@ LinkedStack::LinkedStack();
 void LinkedStack::push(const string & word){
     head = new ListNode(word, head);
 }
-void LinkedStack::pop();
+void LinkedStack::pop(){
+    //check da size to se if 0 if not then fo the rest of code
+    if (size != 0){
+        head = head->next;
+        --size;
+    }
+
+}
 string LinkedStack::top(){
     return head->data;
 }
