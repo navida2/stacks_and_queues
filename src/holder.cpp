@@ -56,11 +56,15 @@ void ListNode::delete_list(ListNode * L){
 }
 
 //LINKED STACK FUNCTIONS
-LinkedStack();
-void push(const string & word);
-void pop();
-string top();
-bool is_empty();
-bool is_full();
-void print(ostream & out);
-~LinkedStack();
+LinkedStack::LinkedStack();
+void LinkedStack::push(const string & word);
+void LinkedStack::pop();
+string LinkedStack::top();
+bool LinkedStack::is_empty(){
+    return head == nullptr;
+}
+bool LinkedStack::is_full(){
+    return false;
+}
+void LinkedStack::print(ostream & out);
+LinkedStack::~LinkedStack();
