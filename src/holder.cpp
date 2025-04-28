@@ -57,7 +57,9 @@ void ListNode::delete_list(ListNode * L){
 
 //LINKED STACK FUNCTIONS
 LinkedStack::LinkedStack();
-void LinkedStack::push(const string & word);
+void LinkedStack::push(const string & word){
+    head = new ListNode(word, head);
+}
 void LinkedStack::pop();
 string LinkedStack::top(){
     return head->data;
