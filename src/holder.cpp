@@ -38,3 +38,17 @@ void ArrayStack::print(ostream & out){
 ArrayStack::~ArrayStack(){
     delete[] buf;
 }
+
+//NODE
+void ListNode::print(ostream & out, ListNode * L);
+void ListNode::delete_list(ListNode * L);
+
+//LINKED STACK FUNCTIONS
+LinkedStack();
+void push(const string & word);
+void pop();
+string top();
+bool is_empty();
+bool is_full();
+void print(ostream & out);
+~LinkedStack();
