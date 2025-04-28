@@ -56,7 +56,9 @@ void ListNode::delete_list(ListNode * L){
 }
 
 //LINKED STACK FUNCTIONS
-LinkedStack::LinkedStack();
+LinkedStack::LinkedStack():Stack("Linked Stack"){
+    head = nullptr;
+}
 void LinkedStack::push(const string & word){
     head = new ListNode(word, head);
 }
