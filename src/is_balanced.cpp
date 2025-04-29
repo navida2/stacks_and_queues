@@ -34,5 +34,6 @@ bool is_balanced(string s){
     return true;
 }
 void test_is_balanced(){
-    cout<<
+    cout<<"<()> should return True this returned "<<is_balanced("<()>")<<endl;
+    cout<<"<() should return False this returned "<<is_balanced("<()")<<endl;
 }
