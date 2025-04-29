@@ -181,9 +181,19 @@ LinkedQueue::~LinkedQueue(){
 
 void error(string word, string msg);
     cout<<"Error - "<<word<<msg<<endl;
-    
-void insert_all_words(int k, string file_name, Holder & L){
 
+void insert_all_words(int k, string file_name, Holder & L){
+    Timer t;
+    double eTime;
+    ifstream in(file_name);
+    int limit = k *NWORDS /10;
+    t.start();
+    for (string word; (in>>word)&&limit>0; --limit){
+        L.find(word);
+    }
+    t.elapsedUserTime(eTime);
+    in.close();
+    cout<<"\t\tF = " <<eTime<<endl;
 }
 void remove_all_words(int k, string file_name, Holder & L){
     Timer t;
