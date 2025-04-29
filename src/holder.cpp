@@ -208,5 +208,16 @@ void remove_all_words(int k, string file_name, Holder & L){
     in.close();
     cout<<"\t\tR = " <<eTime<<endl;
 }
-void measure_holder(string file_name, Holder & L);
+void measure_holder(string file_name, Holder & L){
+    cout<<L.name<<endl;
+    for(int K=1;K<=10;++K){
+        cout<<"\tK = "<<K<<endl;
+        insert_all_words(K, file_name,L);
+        find_all_words(K,file_name,L);
+        remove_all_words(K,file_name,L);
+        if(!L.is_empty()){
+            error(L.name, "is not empty");
+        }
+    }
+}
 void measure_holders(string input_file);
