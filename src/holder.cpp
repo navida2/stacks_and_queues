@@ -1,3 +1,12 @@
+#include "holder.h"
+#include "Timer.h"
+#include <iostream>
+#include <fstream>
+
+
+using namespace std;
+
+
 
 ostream & operator << (ostream & out, Stack & L){
     L.print(out);
