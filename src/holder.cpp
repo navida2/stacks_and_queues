@@ -93,3 +93,19 @@ void LinkedStack::print(ostream & out){
 LinkedStack::~LinkedStack(){
     ListNode::delete_list(head);
 }
+
+//arrayqueue functions to im
+//QUEU IS FIRST IN FIRST OUT LIKE A FRY ELECTRONICS LINE
+
+ArrayQueue::ArrayQueue(int cap):Queue("Array Queue"), capacity(cap), front(0), rear(0){
+    buf = new string[capacity];
+}
+void enq(const string & word);
+void deq();
+string next();
+bool is_empty();
+bool is_full();
+void print(ostream & out);
+ArrayQueue::~ArrayQueue(){
+    delete[] buf;
+}
