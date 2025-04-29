@@ -103,7 +103,9 @@ ArrayQueue::ArrayQueue(int cap):Queue("Array Queue"), capacity(cap), front(0), r
 void enq(const string & word);
 void deq();
 string next();
-bool is_empty();
+bool is_empty(){
+    return !(front && rear);
+}
 bool is_full();
 void print(ostream & out);
 ArrayQueue::~ArrayQueue(){
