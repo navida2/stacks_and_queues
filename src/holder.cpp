@@ -137,7 +137,9 @@ LinkedQueue::LinkedQueue():Queue("Linked Queue"){
 }
 void LinkedQueue::enq(const string & word);
 void LinkedQueue::deq();
-string LinkedQueue::next();
+string LinkedQueue::next(){
+    return head->data;
+}
 
 bool LinkedQueue::is_empty(){
     return front == nullptr;
