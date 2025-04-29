@@ -121,8 +121,9 @@ bool ArrayQueue::is_full(){
     return (front == (rear+1)%capacity);
 }
 void ArrayQueue::print(ostream & out){
-    for(;(rear+1)%capacity!= front){
-        out<<buf[front++];
+    //go from the front to the end printing every element
+    for(int i = front;rear!= i; i =(i+1)%capacity){
+        out<<buf[i];
     }
 }
 ArrayQueue::~ArrayQueue(){
