@@ -146,4 +146,9 @@ bool LinkedQueue::is_full(){
     return false;
 }
 void LinkedQueue::print(ostream & out);
-LinkedQueue::~LinkedQueue();
+
+LinkedQueue::~LinkedQueue(){
+    ListNode::delete_list(head);
+    head = nullptr;
+    tail = nullptr;
+}
