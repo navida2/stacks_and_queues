@@ -104,9 +104,11 @@ void enq(const string & word);
 void deq();
 string next();
 bool is_empty(){
-    return !(front && rear);
+    return (front == rear);
 }
-bool is_full();
+bool is_full(){
+    return 
+}
 void print(ostream & out);
 ArrayQueue::~ArrayQueue(){
     delete[] buf;
