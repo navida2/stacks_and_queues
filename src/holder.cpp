@@ -72,12 +72,12 @@ void LinkedStack::push(const string & word){
     head = new ListNode(word, head);
 }
 void LinkedStack::pop(){
-    //check da size to se if 0 if not then fo the rest of code
-    if (size != 0){
+    //check da head to se if nullptr if not then fo the rest of code
+    if (head !=nullptr){
         ListNode* old_head = head;
         head = head->next;
         delete old_head;
-        --size;
+        
     }
 
 }
@@ -94,7 +94,7 @@ bool LinkedStack::is_full(){
 }
 
 void LinkedStack::print(ostream & out){
-    ListNode* main_node = L;
+    ListNode* main_node = head;
     for(;main_node!=nullptr;main_node=main_node->next){
         out<<main_node->data<<endl;
     }
@@ -198,7 +198,7 @@ void insert_all_words(int k, string file_name, Holder & L){
     int limit = k *NWORDS /10;
     t.start();
     for (string word; (in>>word)&&limit>0; --limit){
-        L.find(word);
+        L.insert(word);
     }
     t.elapsedUserTime(eTime);
     in.close();
@@ -211,7 +211,7 @@ void remove_all_words(int k, string file_name, Holder & L){
     int limit = k *NWORDS /10;
     t.start();
     for (string word; (in>>word)&&limit>0; --limit){
-        L.remove(word);
+        L.remove();
     }
     t.elapsedUserTime(eTime);
     in.close();
@@ -222,7 +222,6 @@ void measure_holder(string file_name, Holder & L){
     for(int K=1;K<=10;++K){
         cout<<"\tK = "<<K<<endl;
         insert_all_words(K, file_name,L);
-        find_all_words(K,file_name,L);
         remove_all_words(K,file_name,L);
         if(!L.is_empty()){
             error(L.name, "is not empty");
