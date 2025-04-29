@@ -131,7 +131,10 @@ ArrayQueue::~ArrayQueue(){
 }
 
 //:LINKED QUEUEU FUNCTIONS
-LinkedQueue::LinkedQueue():Queue("Array Queue"), capacity(cap+1),
+LinkedQueue::LinkedQueue():Queue("Linked Queue"){
+    head = nullptr;
+    tail = nullptr;
+}
 void LinkedQueue::enq(const string & word);
 void LinkedQueue::deq();
 string LinkedQueue::next();
