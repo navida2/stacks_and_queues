@@ -41,7 +41,7 @@ bool ArrayStack::is_full(){
 }
 void ArrayStack::print(ostream & out){
     for(int i=0;i<size;++i){
-        out<<buf[i]<<endl;
+        out<<buf[i]<<" ";
     }
 }
 ArrayStack::~ArrayStack(){
@@ -52,7 +52,7 @@ ArrayStack::~ArrayStack(){
 void ListNode::print(ostream & out, ListNode * L){
     ListNode* main_node = L;
     for(;main_node != nullptr;main_node = main_node->next){
-        out<<main_node->data<<endl;
+        out<<main_node->data<<" ";
     }
 }
 void ListNode::delete_list(ListNode * L){
@@ -96,7 +96,7 @@ bool LinkedStack::is_full(){
 void LinkedStack::print(ostream & out){
     ListNode* main_node = head;
     for(;main_node!=nullptr;main_node=main_node->next){
-        out<<main_node->data<<endl;
+        out<<main_node->data<<" ";
     }
 }
 LinkedStack::~LinkedStack(){
@@ -132,7 +132,7 @@ bool ArrayQueue::is_full(){
 void ArrayQueue::print(ostream & out){
     //go from the front to the end printing every element
     for(int i = front;rear!= i; i =(i+1)%capacity){
-        out<<buf[i]<<endl;
+        out<<buf[i]<<" ";
     }
 }
 ArrayQueue::~ArrayQueue(){
@@ -178,7 +178,7 @@ bool LinkedQueue::is_full(){
 void LinkedQueue::print(ostream & out){
     ListNode* elem = head;
     for(;elem;elem=elem->next){
-        out<<elem->data<<endl;
+        out<<elem->data<<" ";
     }
 }
 
