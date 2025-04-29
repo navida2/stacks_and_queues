@@ -180,7 +180,11 @@ LinkedQueue::~LinkedQueue(){
 }
 
 void error(string word, string msg);
-void insert_all_words(int k, string file_name, Holder & L)
+    cout<<"Error - "<<word<<msg<<endl;
+    
+void insert_all_words(int k, string file_name, Holder & L){
+
+}
 void remove_all_words(int k, string file_name, Holder & L){
     Timer t;
     double eTime;
