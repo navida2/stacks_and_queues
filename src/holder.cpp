@@ -135,7 +135,19 @@ LinkedQueue::LinkedQueue():Queue("Linked Queue"){
     head = nullptr;
     tail = nullptr;
 }
-void LinkedQueue::enq(const string & word);
+void LinkedQueue::enq(const string & word){
+    //check if empty next
+    //set tail nex to new node
+    ListNode* new_elem = new ListNode(word, nullptr);
+    if(is_empty()){
+        head = new_elem;
+        tail = new_elem;
+    }
+    else{
+        tail->next = new_elem;
+        tail = new_elem;
+    }
+}
 void LinkedQueue::deq(){
     if (head!=nullptr){
         ListNode* new_head = head->next;
