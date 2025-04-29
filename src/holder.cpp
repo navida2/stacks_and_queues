@@ -101,13 +101,17 @@ ArrayQueue::ArrayQueue(int cap):Queue("Array Queue"), capacity(cap), front(0), r
     buf = new string[capacity+1];
 }
 void enq(const string & word){//USES REAR TO MOVE
+// check if full first
     buf[rear++] = word;
     rear = rear % capacity;
 }
 void deq(){//USES front to move
-
+//add error checking 
+    front = (front+1)%capacity;
 }
-string next();
+string next(){
+    return buf[front];
+}
 bool is_empty(){
     return (front == rear);
 }
