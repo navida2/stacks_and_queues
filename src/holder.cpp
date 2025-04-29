@@ -170,7 +170,7 @@ string LinkedQueue::next(){
 }
 
 bool LinkedQueue::is_empty(){
-    return front == nullptr;
+    return head == nullptr;
 }
 bool LinkedQueue::is_full(){
     return false;
