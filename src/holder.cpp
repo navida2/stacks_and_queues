@@ -178,3 +178,21 @@ LinkedQueue::~LinkedQueue(){
     head = nullptr;
     tail = nullptr;
 }
+
+void error(string word, string msg);
+void insert_all_words(int k, string file_name, Holder & L)
+void remove_all_words(int k, string file_name, Holder & L){
+    Timer t;
+    double eTime;
+    ifstream in(file_name);
+    int limit = k *NWORDS /10;
+    t.start();
+    for (string word; (in>>word)&&limit>0; --limit){
+        L.remove(word);
+    }
+    t.elapsedUserTime(eTime);
+    in.close();
+    cout<<"\t\tR = " <<eTime<<endl;
+}
+void measure_holder(string file_name, Holder & L);
+void measure_holders(string input_file);
