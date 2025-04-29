@@ -166,7 +166,12 @@ bool LinkedQueue::is_empty(){
 bool LinkedQueue::is_full(){
     return false;
 }
-void LinkedQueue::print(ostream & out);
+void LinkedQueue::print(ostream & out){
+    ListNode* elem = head;
+    for(;elem;elem=elem->next){
+        out<<elem->data<<endl;
+    }
+}
 
 LinkedQueue::~LinkedQueue(){
     ListNode::delete_list(head);
