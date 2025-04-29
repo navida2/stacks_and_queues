@@ -3,8 +3,9 @@
 #include <iostream>
 using namespace std;
 
-void error(string msg, char c);
-    cout<<"Error - "<<word<<msg<<endl;
+void error(string msg, char c){
+    cout<<"Error - "<<c<<msg<<endl;
+}
 
 
 bool is_balanced(string s){
@@ -19,19 +20,17 @@ bool is_balanced(string s){
             
             //get elem then pop it
             //check if the elem before is its closing one if not false
-            if(bal.is_empty()){
-                error("is empty", "bal");
-            }
+            
             char top = bal.top();
             bal.pop();
-            if (!(top =='(' && c ==')') || !(top=='<'&& c=='>')|| !(top=='{' && c =='}') || !(top=='[' && c ==']')){
+            if (!((top =='(' && c ==')') || (top=='<'&& c=='>')|| (top=='{' && c =='}') || (top=='[' && c ==']'))){
                 return false;
             }
 
         }
     
     }
-    return true;
+    return bal.empty();
 }
 void test_is_balanced(){
     cout<<"<()> should return True this returned "<<is_balanced("<()>")<<endl;
