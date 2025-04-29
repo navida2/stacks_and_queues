@@ -135,7 +135,12 @@ LinkedQueue::LinkedQueue():Queue("Array Queue"), capacity(cap+1),
 void LinkedQueue::enq(const string & word);
 void LinkedQueue::deq();
 string LinkedQueue::next();
-bool LinkedQueue::is_empty();
-bool LinkedQueue::is_full();
+
+bool LinkedQueue::is_empty(){
+    return front == nullptr;
+}
+bool LinkedQueue::is_full(){
+    return false;
+}
 void LinkedQueue::print(ostream & out);
 LinkedQueue::~LinkedQueue();
