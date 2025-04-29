@@ -100,37 +100,41 @@ LinkedStack::~LinkedStack(){
 ArrayQueue::ArrayQueue(int cap):Queue("Array Queue"), capacity(cap+1), front(0), rear(0){
     buf = new string[cap+1];
 }
-void enq(const string & word){//USES REAR TO MOVE
+void ArrayQueue::enq(const string & word){//USES REAR TO MOVE
 // check if full first
     buf[rear++] = word;
     rear = rear % capacity;
 }
-void deq(){//USES front to move
+void ArrayQueue::deq(){//USES front to move
 //add error checking 
     front = (front+1)%capacity;
 }
-string next(){
+string ArrayQueue::next(){
     return buf[front];
 }
-bool is_empty(){
+bool ArrayQueue::is_empty(){
     return (front == rear);
 }
-bool is_full(){
+bool ArrayQueue::is_full(){
     //look at ky goodnotes diagram if i get confuded again cux of the last ghost slot
     //double check that it isnt capacity-1 since we added one in the befgining
     return (front == (rear+1)%capacity);
 }
-void print(ostream & out);
+void ArrayQueue::print(ostream & out){
+    for(;(rear+1)%capacity!= front){
+        out<<buf[front++];
+    }
+}
 ArrayQueue::~ArrayQueue(){
     delete[] buf;
 }
 
 //:LINKED QUEUEU FUNCTIONS
-LinkedQueue();
-void enq(const string & word);
-void deq();
-string next();
-bool is_empty();
-bool is_full();
-void print(ostream & out);
-~LinkedQueue();
+LinkedQueue::LinkedQueue():Queue("Array Queue"), capacity(cap+1),
+void LinkedQueue::enq(const string & word);
+void LinkedQueue::deq();
+string LinkedQueue::next();
+bool LinkedQueue::is_empty();
+bool LinkedQueue::is_full();
+void LinkedQueue::print(ostream & out);
+LinkedQueue::~LinkedQueue();
