@@ -20,7 +20,9 @@ bool is_balanced(string s){
             
             //get elem then pop it
             //check if the elem before is its closing one if not false
-            
+            if (bal.empty()){
+                return false;
+            }
             char top = bal.top();
             bal.pop();
             if (!((top =='(' && c ==')') || (top=='<'&& c=='>')|| (top=='{' && c =='}') || (top=='[' && c ==']'))){
