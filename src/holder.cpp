@@ -124,3 +124,13 @@ void print(ostream & out);
 ArrayQueue::~ArrayQueue(){
     delete[] buf;
 }
+
+//:LINKED QUEUEU FUNCTIONS
+LinkedQueue();
+void enq(const string & word);
+void deq();
+string next();
+bool is_empty();
+bool is_full();
+void print(ostream & out);
+~LinkedQueue();
