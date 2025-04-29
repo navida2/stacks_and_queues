@@ -188,9 +188,9 @@ LinkedQueue::~LinkedQueue(){
     tail = nullptr;
 }
 
-void error(string word, string msg);
+void error(string word, string msg){
     cout<<"Error - "<<word<<msg<<endl;
-
+}
 void insert_all_words(int k, string file_name, Holder & L){
     Timer t;
     double eTime;
