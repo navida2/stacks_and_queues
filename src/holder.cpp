@@ -98,10 +98,15 @@ LinkedStack::~LinkedStack(){
 //QUEU IS FIRST IN FIRST OUT LIKE A FRY ELECTRONICS LINE
 
 ArrayQueue::ArrayQueue(int cap):Queue("Array Queue"), capacity(cap), front(0), rear(0){
-    buf = new string[capacity];
+    buf = new string[capacity+1];
 }
-void enq(const string & word);
-void deq();
+void enq(const string & word){//USES REAR TO MOVE
+    buf[rear++] = word;
+    rear = rear % capacity;
+}
+void deq(){//USES front to move
+
+}
 string next();
 bool is_empty(){
     return (front == rear);
