@@ -97,8 +97,8 @@ LinkedStack::~LinkedStack(){
 //arrayqueue functions to im
 //QUEU IS FIRST IN FIRST OUT LIKE A FRY ELECTRONICS LINE
 
-ArrayQueue::ArrayQueue(int cap):Queue("Array Queue"), capacity(cap), front(0), rear(0){
-    buf = new string[capacity+1];
+ArrayQueue::ArrayQueue(int cap):Queue("Array Queue"), capacity(cap+1), front(0), rear(0){
+    buf = new string[cap+1];
 }
 void enq(const string & word){//USES REAR TO MOVE
 // check if full first
@@ -116,9 +116,9 @@ bool is_empty(){
     return (front == rear);
 }
 bool is_full(){
-    //check if rear is the last element
+    //look at ky goodnotes diagram if i get confuded again cux of the last ghost slot
     //double check that it isnt capacity-1 since we added one in the befgining
-    return (rear ==capacity);
+    return (front == (rear+1)%capacity);
 }
 void print(ostream & out);
 ArrayQueue::~ArrayQueue(){
