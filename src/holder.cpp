@@ -229,4 +229,14 @@ void measure_holder(string file_name, Holder & L){
         }
     }
 }
-void measure_holders(string input_file);
+void measure_holders(string input_file){
+    ArrayStack array_stack(NWORDS);
+    LinkedStack linked_stack;
+    ArrayQueue array_queue(NWORDS);
+    LinkedQueue linked_queue;
+
+    measure_holder(input_file, array_stack);
+    measure_holder(input_file, linked_stack);
+    measure_holder(input_file, array_queue);
+    measure_holder(input_file, linked_queue);
+}
