@@ -136,7 +136,14 @@ LinkedQueue::LinkedQueue():Queue("Linked Queue"){
     tail = nullptr;
 }
 void LinkedQueue::enq(const string & word);
-void LinkedQueue::deq();
+void LinkedQueue::deq(){
+    if (head!=nullptr){
+        ListNode* new_head = head->next;
+        delete head;
+        head = new_head;
+    }
+}
+
 string LinkedQueue::next(){
     return head->data;
 }
