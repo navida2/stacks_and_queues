@@ -116,7 +116,9 @@ bool is_empty(){
     return (front == rear);
 }
 bool is_full(){
-    return 
+    //check if rear is the last element
+    //double check that it isnt capacity-1 since we added one in the befgining
+    return (rear ==capacity);
 }
 void print(ostream & out);
 ArrayQueue::~ArrayQueue(){
