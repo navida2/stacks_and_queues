@@ -4,6 +4,9 @@
 using namespace std;
 
 void error(string msg, char c);
+    cout<<"Error - "<<word<<msg<<endl;
+
+
 bool is_balanced(string s){
     stack<char> bal;
     for (auto c: s){
@@ -16,7 +19,9 @@ bool is_balanced(string s){
             
             //get elem then pop it
             //check if the elem before is its closing one if not false
-            
+            if(bal.is_empty()){
+                error("is empty", "bal");
+            }
             char top = bal.top();
             bal.pop();
             if (!(top =='(' && c ==')') || !(top=='<'&& c=='>')|| !(top=='{' && c =='}') || !(top=='[' && c ==']')){
