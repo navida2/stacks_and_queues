@@ -202,7 +202,7 @@ void insert_all_words(int k, string file_name, Holder & L){
     }
     t.elapsedUserTime(eTime);
     in.close();
-    cout<<"\t\tF = " <<eTime<<endl;
+    cout<<"\t\tI = " <<eTime<<endl;
 }
 void remove_all_words(int k, string file_name, Holder & L){
     Timer t;
