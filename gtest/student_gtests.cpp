@@ -39,6 +39,22 @@ TEST(ArrayStack, is_full) {
   EXPECT_TRUE(hi.is_full());
 }
 
+TEST(LinkedStack,Push){
+
+}
+TEST(LinkedStack,Pop){
+  
+}
+TEST(LinkedStack,top){
+  
+}
+TEST(LinkedStack,is_empty){
+  
+}
+TEST(LinkedStack,is_full){
+  
+}
+
 
 
 
