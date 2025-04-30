@@ -78,15 +78,21 @@ TEST(ArrayQueue,deq){
 }
 
 TEST(ArrayQueue,next){
-  
+  ArrayQueue hi3(2);
+  hi3.enq("drake");
+  EXPECT_TRUE(hi3.next()=="drake");
 }
 
 TEST(ArrayQueue,is_full){
-  
+  ArrayQueue hi3(2);
+  hi3.enq("ye");
+  hi3.enq("ILOVEYOU")
+  EXPECT_TRUE(hi3.is_full());
 }
 
 TEST(ArrayQueue,is_empty){
-  
+  ArrayQueue hi3(1);
+  EXPECT_TRUE(hi3.is_empty())
 }
 
 
