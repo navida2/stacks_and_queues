@@ -76,7 +76,7 @@ TEST(ArrayQueue,deq){
   hi3.enq("ye");
   hi3.enq("WRONG");
   hi3.deq();
-  EXPECT_TRUE(hi3.next() == "ye");
+  EXPECT_TRUE(hi3.next() == "WRONG");
 }
 
 TEST(ArrayQueue,next){
@@ -108,7 +108,7 @@ TEST(LinkedQueue,deq){
   hi4.enq("drake");
   hi4.enq("ye");
   hi4.deq();
-  EXPECT_TRUE(hi4.next()=="drake");
+  EXPECT_TRUE(hi4.next()=="ye");
 }
 
 TEST(LinkedQueue,next){

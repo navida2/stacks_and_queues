@@ -718,18 +718,7 @@ CMakeFiles/student_gtests.dir/gtest/student_gtests.cpp.o
  /usr/include/gtest/gtest_prod.h
  /usr/include/gtest/gtest-typed-test.h
  /usr/include/gtest/gtest_pred_impl.h
- /home/atashbar/ICS46/HW4/src/Timer.h
- /usr/include/x86_64-linux-gnu/sys/time.h
- /usr/include/x86_64-linux-gnu/sys/resource.h
- /usr/include/x86_64-linux-gnu/bits/resource.h
- /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h
  /home/atashbar/ICS46/HW4/src/holder.h
- /home/atashbar/ICS46/HW4/src/is_balanced.h
- /usr/include/c++/11/stack
- /usr/include/c++/11/deque
- /usr/include/c++/11/bits/stl_deque.h
- /usr/include/c++/11/bits/deque.tcc
- /usr/include/c++/11/bits/stl_stack.h
 
 CMakeFiles/student_gtests.dir/src/holder.cpp.o
  /home/atashbar/ICS46/HW4/src/holder.cpp

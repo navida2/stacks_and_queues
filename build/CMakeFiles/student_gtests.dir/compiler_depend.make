@@ -716,18 +716,7 @@ CMakeFiles/student_gtests.dir/gtest/student_gtests.cpp.o: ../gtest/student_gtest
   /usr/include/gtest/gtest_prod.h \
   /usr/include/gtest/gtest-typed-test.h \
   /usr/include/gtest/gtest_pred_impl.h \
-  ../src/Timer.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/x86_64-linux-gnu/sys/resource.h \
-  /usr/include/x86_64-linux-gnu/bits/resource.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
-  ../src/holder.h \
-  ../src/is_balanced.h \
-  /usr/include/c++/11/stack \
-  /usr/include/c++/11/deque \
-  /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/bits/stl_stack.h
+  ../src/holder.h
 
 CMakeFiles/student_gtests.dir/src/holder.cpp.o: ../src/holder.cpp \
   /usr/include/stdc-predef.h \
@@ -1135,6 +1124,12 @@ CMakeFiles/student_gtests.dir/src/is_balanced.cpp.o: ../src/is_balanced.cpp \
   /usr/include/c++/11/bits/uses_allocator.h
 
 
+/usr/include/c++/11/bits/stl_stack.h:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/c++/11/stack:
+
 ../src/is_balanced.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
@@ -1143,19 +1138,13 @@ CMakeFiles/student_gtests.dir/src/is_balanced.cpp.o: ../src/is_balanced.cpp \
 
 /usr/include/c++/11/fstream:
 
-/usr/include/c++/11/bits/stl_stack.h:
-
-/usr/include/c++/11/bits/deque.tcc:
-
-/usr/include/c++/11/stack:
-
-../src/holder.h:
-
 /usr/include/x86_64-linux-gnu/sys/resource.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
 ../src/Timer.h:
+
+../src/holder.h:
 
 /usr/include/gtest/gtest_pred_impl.h:
 
@@ -1196,8 +1185,6 @@ CMakeFiles/student_gtests.dir/src/is_balanced.cpp.o: ../src/is_balanced.cpp \
 /usr/include/c++/11/map:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
-
-../src/is_balanced.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
