@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/atashbar/ICS46/HW4/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/main.dir/src/holder.cpp.o -c /home/atashbar/ICS46/HW4/src/holder.cpp",
+  "file": "/home/atashbar/ICS46/HW4/src/holder.cpp"
+},
+{
+  "directory": "/home/atashbar/ICS46/HW4/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/main.dir/src/main.cpp.o -c /home/atashbar/ICS46/HW4/src/main.cpp",
+  "file": "/home/atashbar/ICS46/HW4/src/main.cpp"
+},
+{
+  "directory": "/home/atashbar/ICS46/HW4/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/is_balanced.dir/src/is_balanced.cpp.o -c /home/atashbar/ICS46/HW4/src/is_balanced.cpp",
+  "file": "/home/atashbar/ICS46/HW4/src/is_balanced.cpp"
+},
+{
+  "directory": "/home/atashbar/ICS46/HW4/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/is_balanced.dir/src/is_balanced_main.cpp.o -c /home/atashbar/ICS46/HW4/src/is_balanced_main.cpp",
+  "file": "/home/atashbar/ICS46/HW4/src/is_balanced_main.cpp"
+},
+{
+  "directory": "/home/atashbar/ICS46/HW4/build",
+  "command": "/usr/bin/g++  -I/home/atashbar/ICS46/HW4/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/gtest/gtestmain.cpp.o -c /home/atashbar/ICS46/HW4/gtest/gtestmain.cpp",
+  "file": "/home/atashbar/ICS46/HW4/gtest/gtestmain.cpp"
+},
+{
+  "directory": "/home/atashbar/ICS46/HW4/build",
+  "command": "/usr/bin/g++  -I/home/atashbar/ICS46/HW4/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/gtest/student_gtests.cpp.o -c /home/atashbar/ICS46/HW4/gtest/student_gtests.cpp",
+  "file": "/home/atashbar/ICS46/HW4/gtest/student_gtests.cpp"
+},
+{
+  "directory": "/home/atashbar/ICS46/HW4/build",
+  "command": "/usr/bin/g++  -I/home/atashbar/ICS46/HW4/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/src/holder.cpp.o -c /home/atashbar/ICS46/HW4/src/holder.cpp",
+  "file": "/home/atashbar/ICS46/HW4/src/holder.cpp"
+},
+{
+  "directory": "/home/atashbar/ICS46/HW4/build",
+  "command": "/usr/bin/g++  -I/home/atashbar/ICS46/HW4/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/src/is_balanced.cpp.o -c /home/atashbar/ICS46/HW4/src/is_balanced.cpp",
+  "file": "/home/atashbar/ICS46/HW4/src/is_balanced.cpp"
+}
+]

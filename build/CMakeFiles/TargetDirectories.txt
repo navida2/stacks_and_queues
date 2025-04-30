@@ -1,0 +1,5 @@
+/home/atashbar/ICS46/HW4/build/CMakeFiles/main.dir
+/home/atashbar/ICS46/HW4/build/CMakeFiles/is_balanced.dir
+/home/atashbar/ICS46/HW4/build/CMakeFiles/student_gtests.dir
+/home/atashbar/ICS46/HW4/build/CMakeFiles/edit_cache.dir
+/home/atashbar/ICS46/HW4/build/CMakeFiles/rebuild_cache.dir
