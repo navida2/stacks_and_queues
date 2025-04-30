@@ -95,6 +95,23 @@ TEST(ArrayQueue,is_empty){
   EXPECT_TRUE(hi3.is_empty())
 }
 
+TEST(StackQueue,enq){
+
+}
+
+TEST(StackQueue,deq){
+  
+}
+
+TEST(StackQueue,next){
+  
+}
+TEST(StackQueue,is_empty){
+  
+}
+TEST(StackQueue,is_full){
+  
+}
 
 
 
