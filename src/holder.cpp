@@ -85,6 +85,9 @@ void LinkedStack::pop(){
 
 }
 string LinkedStack::top(){
+    if (head==nullptr){
+        error("linked stack", "is empty");
+    }
     return head->data;
 }
 
@@ -119,7 +122,7 @@ void ArrayQueue::enq(const string & word){//USES REAR TO MOVE
 }
 void ArrayQueue::deq(){//USES front to move
 //add error checking 
-    if (front == 0 && rear ==0){
+    if (is_empty()){
         error("deq", "queue is empty");
     }
     front = (front+1)%capacity;
