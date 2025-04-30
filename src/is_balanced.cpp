@@ -31,7 +31,7 @@ bool is_balanced(string s){
                 return false;
             }
             else{
-                return false;
+                continue;
             }
         }
         else{
