@@ -11,8 +11,7 @@ void error(string msg, char c){
 bool is_balanced(string s){
     stack<char> bal;
     //can i use .length would that not be better
-    for (size_t i=0; i<s.length();++i){ //change to string.length
-        char c = s[i];
+    for (auto c:s){ //change to string.length
         if(c=='(' || c== '<'||c=='{' || c=='['){
             //[push it onto stack]
             bal.push(c);
@@ -31,13 +30,20 @@ bool is_balanced(string s){
             if (!((top_of_stack =='(' && c ==')') || (top_of_stack=='<'&& c=='>')|| (top_of_stack=='{' && c =='}') || (top_of_stack=='[' && c ==']'))){
                 return false;
             }
+            else{
+                return false;
+            }
         }
         else{
             //else return false
             return false;
         }
     }
-    return bal.empty();
+    if (bal.empty()){
+        return true;
+
+    }
+    return false;
 }
 void test_is_balanced(){
     cout<<"<()> should return True this returned "<<is_balanced("<()>")<<endl;
