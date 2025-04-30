@@ -64,6 +64,30 @@ TEST(LinkedStack,is_full){
   EXPECT_TRUE(!hi2.is_full());
 }
 
+TEST(ArrayQueue,enq){
+
+}
+
+TEST(ArrayQueue,deq){
+  
+}
+
+TEST(ArrayQueue,next){
+  
+}
+
+TEST(ArrayQueue,is_full){
+  
+}
+
+TEST(ArrayQueue,is_empty){
+  
+}
+
+
+
+
+
 
 
 
