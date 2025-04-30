@@ -96,11 +96,16 @@ TEST(ArrayQueue,is_empty){
 }
 
 TEST(LinkedQueue,enq){
-
+  LinkedQueue hi4;
+  hi4.enq("drake");
+  EXPECT_TRUE(hi4.next()=="drake");
 }
 
 TEST(LinkedQueue,deq){
-  
+  LinkedQueue hi4;
+  hi4.enq("drake");
+  hi4.enq("ye");
+  EXPECT_TRUE(hi4.next()=="drake");
 }
 
 TEST(LinkedQueue,next){
