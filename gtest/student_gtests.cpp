@@ -105,17 +105,23 @@ TEST(LinkedQueue,deq){
   LinkedQueue hi4;
   hi4.enq("drake");
   hi4.enq("ye");
+  hi4.deq();
   EXPECT_TRUE(hi4.next()=="drake");
 }
 
 TEST(LinkedQueue,next){
-  
+  LinkedQueue hi4;
+  hi4.enq("no");
+  EXPECT_TRUE(hi4.next()=="no");
 }
 TEST(LinkedQueue,is_empty){
-  
+  LinkedQueue hi4;
+  EXPECT_TRUE(hi4.is_empty());
 }
+
 TEST(LinkedQueue,is_full){
-  
+  LinkedQueue hi4;
+  EXPECT_TRUE(!hi4.is_full());
 }
 
 
