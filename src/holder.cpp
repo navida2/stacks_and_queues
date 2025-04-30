@@ -117,6 +117,9 @@ ArrayQueue::ArrayQueue(int cap):Queue("Array Queue"), capacity(cap+1), front(0),
 }
 void ArrayQueue::enq(const string & word){//USES REAR TO MOVE
 // check if full first
+    if(is_full()){
+        error("array queue enq", "queue is full");
+    }
     buf[rear++] = word;
     rear = rear % capacity;
 }
