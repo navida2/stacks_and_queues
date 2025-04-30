@@ -4,20 +4,27 @@
 #include "holder.h"
 #include "is_balanced.h"
 
-TEST(Replace, Me) {
-  EXPECT_TRUE(false);
-}
+
 
 TEST(ArrayStack, Push) {
-  
+  ArrayStack hi(2);
+  hi.push("drake");
+  EXPECT_TRUE(hi.size == 1);
 }
 
 TEST(ArrayStack, Pop) {
-  
+  ArrayStack hi(2);
+  hi.push("drake");
+  hi.push("drake2");
+  hi.pop();
+  EXPECT_TRUE(hi.top()=="drake");
 }
 
 TEST(ArrayStack, top) {
-  
+  ArrayStack hi(2);
+  hi.push("drake");
+  hi.push("drake2");
+  EXPECT_TRUE(hi.top()=="drake2");
 }
 
 TEST(ArrayStack, is_empty) {
