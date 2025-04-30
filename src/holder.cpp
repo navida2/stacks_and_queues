@@ -31,6 +31,9 @@ void ArrayStack::pop(){
 }
 string ArrayStack::top(){
     //come back and add error if list is empty
+    if (size ==0){
+        error("stack", "size is zero");
+    }
     return buf[size-1];
 }
 bool ArrayStack::is_empty(){
@@ -116,6 +119,9 @@ void ArrayQueue::enq(const string & word){//USES REAR TO MOVE
 }
 void ArrayQueue::deq(){//USES front to move
 //add error checking 
+    if (front == 0 && rear ==0){
+        error("deq", "queue is empty");
+    }
     front = (front+1)%capacity;
 }
 string ArrayQueue::next(){
