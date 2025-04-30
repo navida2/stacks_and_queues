@@ -40,19 +40,28 @@ TEST(ArrayStack, is_full) {
 }
 
 TEST(LinkedStack,Push){
-
+  LinkedStack hi2("drake");
+  hi2.push("hola");
+  EXPECT_TRUE(hi2.top()=="hola");
 }
 TEST(LinkedStack,Pop){
-  
+  LinkedStack hi2("drake");
+  hi2.push("hola");
+  hi2.push("nope")
+  EXPECT_TRUE(hi2.top()=="hola");
 }
 TEST(LinkedStack,top){
-  
+  LinkedStack hi2("drake");
+  hi2.push("hola");
+  EXPECT_TRUE(hi2.top()=="hola");
 }
 TEST(LinkedStack,is_empty){
-  
+  LinkedStack hi2("drake");
+  EXPECT_TRUE(hi2.is_empty());
 }
 TEST(LinkedStack,is_full){
-  
+  LinkedStack hi2("drake");
+  EXPECT_TRUE(!hi2.is_full());
 }
 
 
