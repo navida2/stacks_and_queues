@@ -65,11 +65,16 @@ TEST(LinkedStack,is_full){
 }
 
 TEST(ArrayQueue,enq){
-
+  ArrayQueue hi3(2);
+  hi3.enq("ye");
+  EXPECT_TRUE(hi3.next()=="ye");
 }
 
 TEST(ArrayQueue,deq){
-  
+  ArrayQueue hi3(2);
+  hi3.enq("ye");
+  hi3.deq();
+  EXPECT_TRUE(hi3.size == 0);
 }
 
 TEST(ArrayQueue,next){
