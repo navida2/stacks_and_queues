@@ -22,11 +22,14 @@ TEST(ArrayStack, top) {
 
 TEST(ArrayStack, is_empty) {
   ArrayStack hi(2);
-  EXPECT_TRUE(hi.is_empty())
+  EXPECT_TRUE(hi.is_empty());
 }
 
 TEST(ArrayStack, is_full) {
-  
+  ArrayStack hi(2);
+  hi.push("drake");
+  hi.push("drake2");
+  EXPECT_TRUE(hi.is_full());
 }
 
 
